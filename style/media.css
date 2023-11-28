@@ -1,0 +1,76 @@
+@media (max-width: 992px) {
+    .films__catalog{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(370px, 500px);
+    }
+    .collections__column{
+        grid-template-columns: minmax(190px, 700px);
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .header__nav .container{
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .header__link span {
+        padding: 30px 6px;
+    }
+    .intro__title{
+        font-size: 58px;
+    }
+    .series__item:nth-of-type(2),
+    .series__item:nth-of-type(3){
+        grid-column: 3 / 5;
+    }
+    .series__item:nth-of-type(4){
+        grid-column: 1 / 3;
+    }
+    .series__item:nth-of-type(5){
+        grid-column: 3 / 5;
+    }
+    .footer .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer__text{
+        
+    }
+}
+@media (max-width: 576px) {
+    .intro__title{
+        text-align: center;
+    }
+    .films__catalog{
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(370px, max-content);
+    }
+    .series__item{
+        grid-column: 1 / -1 !important;
+
+    }
+    .films__catalog{
+
+    }
+}
+@media (max-width: 450px){
+    .series__top{
+        padding: 40px 5px;
+    }
+    .series__top-text{
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+    }
+    .series__top-name{
+        text-align: center;
+    }
+}
+@media (max-width: 400px) {
+    .header__list{
+        gap: 10px;
+    }
+    .intro__title{
+        font-size: 50px;
+    }
+}
